@@ -29,29 +29,44 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
+            flowLayoutPanel3 = new FlowLayoutPanel();
+            tableLayoutPanelOffline = new TableLayoutPanel();
+            lblLocation = new Label();
+            lblClassroom = new Label();
+            lblSchedule = new Label();
+            txtLocation = new TextBox();
+            txtClassroom = new TextBox();
+            txtSchedule = new TextBox();
+            tableLayoutPanelOnline = new TableLayoutPanel();
+            lblPlatform = new Label();
+            lblRecording = new Label();
+            lblContactInformation = new Label();
+            txtPLatform = new TextBox();
+            txtRecording = new TextBox();
+            txtContactInformation = new TextBox();
             label2 = new Label();
             flowLayoutPanel2 = new FlowLayoutPanel();
             btnCreate = new Button();
             btnReset = new Button();
-            tableLayoutPanel1 = new TableLayoutPanel();
+            tableLayoutPanelMain = new TableLayoutPanel();
             lblID = new Label();
             lblNameCourse = new Label();
-            textBox2 = new TextBox();
+            txtNameCourse = new TextBox();
             lblDescription = new Label();
-            textBox3 = new TextBox();
+            txtDescription = new TextBox();
             lblLecturer = new Label();
-            textBox4 = new TextBox();
+            txtLecturer = new TextBox();
             lblPrice = new Label();
-            textBox5 = new TextBox();
+            txtPriceCourse = new TextBox();
             lblCategory = new Label();
             lblDuration = new Label();
-            textBox7 = new TextBox();
-            label1 = new Label();
-            dateTimePicker1 = new DateTimePicker();
+            txtDuration = new TextBox();
+            lblStartDate = new Label();
+            dateTimePickerStartDate = new DateTimePicker();
             flowLayoutPanel1 = new FlowLayoutPanel();
-            radioButton1 = new RadioButton();
-            radioButton2 = new RadioButton();
-            textBox1 = new TextBox();
+            radioBtnOnline = new RadioButton();
+            radioBtnOffline = new RadioButton();
+            txtID = new TextBox();
             groupBox2 = new GroupBox();
             dataGridView1 = new DataGridView();
             ColumnID = new DataGridViewTextBoxColumn();
@@ -63,8 +78,11 @@
             ColumnPrice = new DataGridViewTextBoxColumn();
             ColumnStartDate = new DataGridViewTextBoxColumn();
             groupBox1.SuspendLayout();
+            flowLayoutPanel3.SuspendLayout();
+            tableLayoutPanelOffline.SuspendLayout();
+            tableLayoutPanelOnline.SuspendLayout();
             flowLayoutPanel2.SuspendLayout();
-            tableLayoutPanel1.SuspendLayout();
+            tableLayoutPanelMain.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -74,14 +92,175 @@
             // 
             groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             groupBox1.BackColor = SystemColors.GradientInactiveCaption;
+            groupBox1.Controls.Add(flowLayoutPanel3);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(flowLayoutPanel2);
-            groupBox1.Controls.Add(tableLayoutPanel1);
+            groupBox1.Controls.Add(tableLayoutPanelMain);
             groupBox1.Location = new Point(50, 45);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(1298, 504);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
+            // 
+            // flowLayoutPanel3
+            // 
+            flowLayoutPanel3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            flowLayoutPanel3.Controls.Add(tableLayoutPanelOffline);
+            flowLayoutPanel3.Controls.Add(tableLayoutPanelOnline);
+            flowLayoutPanel3.Location = new Point(80, 289);
+            flowLayoutPanel3.Name = "flowLayoutPanel3";
+            flowLayoutPanel3.Size = new Size(1181, 122);
+            flowLayoutPanel3.TabIndex = 4;
+            // 
+            // tableLayoutPanelOffline
+            // 
+            tableLayoutPanelOffline.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            tableLayoutPanelOffline.ColumnCount = 2;
+            tableLayoutPanelOffline.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 18.2579556F));
+            tableLayoutPanelOffline.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 81.74204F));
+            tableLayoutPanelOffline.Controls.Add(lblLocation, 0, 0);
+            tableLayoutPanelOffline.Controls.Add(lblClassroom, 0, 1);
+            tableLayoutPanelOffline.Controls.Add(lblSchedule, 0, 2);
+            tableLayoutPanelOffline.Controls.Add(txtLocation, 1, 0);
+            tableLayoutPanelOffline.Controls.Add(txtClassroom, 1, 1);
+            tableLayoutPanelOffline.Controls.Add(txtSchedule, 1, 2);
+            tableLayoutPanelOffline.Location = new Point(3, 3);
+            tableLayoutPanelOffline.Name = "tableLayoutPanelOffline";
+            tableLayoutPanelOffline.RowCount = 3;
+            tableLayoutPanelOffline.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanelOffline.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanelOffline.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
+            tableLayoutPanelOffline.Size = new Size(597, 108);
+            tableLayoutPanelOffline.TabIndex = 0;
+            // 
+            // lblLocation
+            // 
+            lblLocation.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            lblLocation.AutoSize = true;
+            lblLocation.Location = new Point(3, 0);
+            lblLocation.Name = "lblLocation";
+            lblLocation.Size = new Size(83, 39);
+            lblLocation.TabIndex = 0;
+            lblLocation.Text = "Location:";
+            // 
+            // lblClassroom
+            // 
+            lblClassroom.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            lblClassroom.AutoSize = true;
+            lblClassroom.Location = new Point(3, 39);
+            lblClassroom.Name = "lblClassroom";
+            lblClassroom.Size = new Size(100, 39);
+            lblClassroom.TabIndex = 1;
+            lblClassroom.Text = "Classroom:";
+            // 
+            // lblSchedule
+            // 
+            lblSchedule.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            lblSchedule.AutoSize = true;
+            lblSchedule.Location = new Point(3, 78);
+            lblSchedule.Name = "lblSchedule";
+            lblSchedule.Size = new Size(87, 30);
+            lblSchedule.TabIndex = 2;
+            lblSchedule.Text = "Schedule:";
+            // 
+            // txtLocation
+            // 
+            txtLocation.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtLocation.Location = new Point(111, 3);
+            txtLocation.Name = "txtLocation";
+            txtLocation.Size = new Size(483, 31);
+            txtLocation.TabIndex = 3;
+            // 
+            // txtClassroom
+            // 
+            txtClassroom.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtClassroom.Location = new Point(111, 42);
+            txtClassroom.Name = "txtClassroom";
+            txtClassroom.Size = new Size(483, 31);
+            txtClassroom.TabIndex = 4;
+            // 
+            // txtSchedule
+            // 
+            txtSchedule.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtSchedule.Location = new Point(111, 81);
+            txtSchedule.Name = "txtSchedule";
+            txtSchedule.Size = new Size(483, 31);
+            txtSchedule.TabIndex = 5;
+            // 
+            // tableLayoutPanelOnline
+            // 
+            tableLayoutPanelOnline.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            tableLayoutPanelOnline.ColumnCount = 2;
+            tableLayoutPanelOnline.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 18.3566437F));
+            tableLayoutPanelOnline.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 81.64336F));
+            tableLayoutPanelOnline.Controls.Add(lblPlatform, 0, 0);
+            tableLayoutPanelOnline.Controls.Add(lblRecording, 0, 1);
+            tableLayoutPanelOnline.Controls.Add(lblContactInformation, 0, 2);
+            tableLayoutPanelOnline.Controls.Add(txtPLatform, 1, 0);
+            tableLayoutPanelOnline.Controls.Add(txtRecording, 1, 1);
+            tableLayoutPanelOnline.Controls.Add(txtContactInformation, 1, 2);
+            tableLayoutPanelOnline.Location = new Point(606, 3);
+            tableLayoutPanelOnline.Name = "tableLayoutPanelOnline";
+            tableLayoutPanelOnline.RowCount = 3;
+            tableLayoutPanelOnline.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanelOnline.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanelOnline.RowStyles.Add(new RowStyle(SizeType.Absolute, 31F));
+            tableLayoutPanelOnline.Size = new Size(572, 108);
+            tableLayoutPanelOnline.TabIndex = 2;
+            // 
+            // lblPlatform
+            // 
+            lblPlatform.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            lblPlatform.AutoSize = true;
+            lblPlatform.Location = new Point(3, 0);
+            lblPlatform.Name = "lblPlatform";
+            lblPlatform.Size = new Size(84, 38);
+            lblPlatform.TabIndex = 0;
+            lblPlatform.Text = "Platform:";
+            // 
+            // lblRecording
+            // 
+            lblRecording.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            lblRecording.AutoSize = true;
+            lblRecording.Location = new Point(3, 38);
+            lblRecording.Name = "lblRecording";
+            lblRecording.Size = new Size(96, 38);
+            lblRecording.TabIndex = 1;
+            lblRecording.Text = "Recording:";
+            // 
+            // lblContactInformation
+            // 
+            lblContactInformation.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            lblContactInformation.AutoSize = true;
+            lblContactInformation.Location = new Point(3, 76);
+            lblContactInformation.Name = "lblContactInformation";
+            lblContactInformation.Size = new Size(77, 32);
+            lblContactInformation.TabIndex = 2;
+            lblContactInformation.Text = "Contact:";
+            // 
+            // txtPLatform
+            // 
+            txtPLatform.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtPLatform.Location = new Point(108, 3);
+            txtPLatform.Name = "txtPLatform";
+            txtPLatform.Size = new Size(461, 31);
+            txtPLatform.TabIndex = 3;
+            // 
+            // txtRecording
+            // 
+            txtRecording.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtRecording.Location = new Point(108, 41);
+            txtRecording.Name = "txtRecording";
+            txtRecording.Size = new Size(461, 31);
+            txtRecording.TabIndex = 4;
+            // 
+            // txtContactInformation
+            // 
+            txtContactInformation.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtContactInformation.Location = new Point(108, 79);
+            txtContactInformation.Name = "txtContactInformation";
+            txtContactInformation.Size = new Size(461, 31);
+            txtContactInformation.TabIndex = 5;
             // 
             // label2
             // 
@@ -99,7 +278,7 @@
             flowLayoutPanel2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             flowLayoutPanel2.Controls.Add(btnCreate);
             flowLayoutPanel2.Controls.Add(btnReset);
-            flowLayoutPanel2.Location = new Point(715, 350);
+            flowLayoutPanel2.Location = new Point(720, 417);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
             flowLayoutPanel2.Size = new Size(504, 64);
             flowLayoutPanel2.TabIndex = 2;
@@ -123,43 +302,44 @@
             btnReset.TabIndex = 2;
             btnReset.Text = "Reset";
             btnReset.UseVisualStyleBackColor = true;
+            btnReset.Click += btnReset_Click;
             // 
-            // tableLayoutPanel1
+            // tableLayoutPanelMain
             // 
-            tableLayoutPanel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            tableLayoutPanel1.ColumnCount = 6;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 22.348484F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 77.65151F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 106F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 329F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 114F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 122F));
-            tableLayoutPanel1.Controls.Add(lblID, 0, 0);
-            tableLayoutPanel1.Controls.Add(lblNameCourse, 0, 1);
-            tableLayoutPanel1.Controls.Add(textBox2, 1, 1);
-            tableLayoutPanel1.Controls.Add(lblDescription, 0, 2);
-            tableLayoutPanel1.Controls.Add(textBox3, 1, 2);
-            tableLayoutPanel1.Controls.Add(lblLecturer, 2, 0);
-            tableLayoutPanel1.Controls.Add(textBox4, 3, 0);
-            tableLayoutPanel1.Controls.Add(lblPrice, 2, 1);
-            tableLayoutPanel1.Controls.Add(textBox5, 3, 1);
-            tableLayoutPanel1.Controls.Add(lblCategory, 2, 2);
-            tableLayoutPanel1.Controls.Add(lblDuration, 0, 3);
-            tableLayoutPanel1.Controls.Add(textBox7, 1, 3);
-            tableLayoutPanel1.Controls.Add(label1, 2, 3);
-            tableLayoutPanel1.Controls.Add(dateTimePicker1, 3, 3);
-            tableLayoutPanel1.Controls.Add(flowLayoutPanel1, 3, 2);
-            tableLayoutPanel1.Controls.Add(textBox1, 1, 0);
-            tableLayoutPanel1.Location = new Point(80, 109);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 4;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50.60241F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 49.39759F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 39F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 36F));
-            tableLayoutPanel1.Size = new Size(1181, 159);
-            tableLayoutPanel1.TabIndex = 0;
-            tableLayoutPanel1.Paint += tableLayoutPanel1_Paint;
+            tableLayoutPanelMain.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            tableLayoutPanelMain.ColumnCount = 6;
+            tableLayoutPanelMain.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 22.348484F));
+            tableLayoutPanelMain.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 77.65151F));
+            tableLayoutPanelMain.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 106F));
+            tableLayoutPanelMain.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 329F));
+            tableLayoutPanelMain.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 114F));
+            tableLayoutPanelMain.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 122F));
+            tableLayoutPanelMain.Controls.Add(lblID, 0, 0);
+            tableLayoutPanelMain.Controls.Add(lblNameCourse, 0, 1);
+            tableLayoutPanelMain.Controls.Add(txtNameCourse, 1, 1);
+            tableLayoutPanelMain.Controls.Add(lblDescription, 0, 2);
+            tableLayoutPanelMain.Controls.Add(txtDescription, 1, 2);
+            tableLayoutPanelMain.Controls.Add(lblLecturer, 2, 0);
+            tableLayoutPanelMain.Controls.Add(txtLecturer, 3, 0);
+            tableLayoutPanelMain.Controls.Add(lblPrice, 2, 1);
+            tableLayoutPanelMain.Controls.Add(txtPriceCourse, 3, 1);
+            tableLayoutPanelMain.Controls.Add(lblCategory, 2, 2);
+            tableLayoutPanelMain.Controls.Add(lblDuration, 0, 3);
+            tableLayoutPanelMain.Controls.Add(txtDuration, 1, 3);
+            tableLayoutPanelMain.Controls.Add(lblStartDate, 2, 3);
+            tableLayoutPanelMain.Controls.Add(dateTimePickerStartDate, 3, 3);
+            tableLayoutPanelMain.Controls.Add(flowLayoutPanel1, 3, 2);
+            tableLayoutPanelMain.Controls.Add(txtID, 1, 0);
+            tableLayoutPanelMain.Location = new Point(80, 109);
+            tableLayoutPanelMain.Name = "tableLayoutPanelMain";
+            tableLayoutPanelMain.RowCount = 4;
+            tableLayoutPanelMain.RowStyles.Add(new RowStyle(SizeType.Percent, 50.60241F));
+            tableLayoutPanelMain.RowStyles.Add(new RowStyle(SizeType.Percent, 49.39759F));
+            tableLayoutPanelMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 39F));
+            tableLayoutPanelMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 36F));
+            tableLayoutPanelMain.Size = new Size(1181, 159);
+            tableLayoutPanelMain.TabIndex = 0;
+            tableLayoutPanelMain.Paint += tableLayoutPanel1_Paint;
             // 
             // lblID
             // 
@@ -183,12 +363,12 @@
             lblNameCourse.Text = "Name:";
             lblNameCourse.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // textBox2
+            // txtNameCourse
             // 
-            textBox2.Location = new Point(116, 45);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(388, 31);
-            textBox2.TabIndex = 3;
+            txtNameCourse.Location = new Point(116, 45);
+            txtNameCourse.Name = "txtNameCourse";
+            txtNameCourse.Size = new Size(388, 31);
+            txtNameCourse.TabIndex = 3;
             // 
             // lblDescription
             // 
@@ -201,12 +381,12 @@
             lblDescription.Text = "Description:";
             lblDescription.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // textBox3
+            // txtDescription
             // 
-            textBox3.Location = new Point(116, 86);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(388, 31);
-            textBox3.TabIndex = 5;
+            txtDescription.Location = new Point(116, 86);
+            txtDescription.Name = "txtDescription";
+            txtDescription.Size = new Size(388, 31);
+            txtDescription.TabIndex = 5;
             // 
             // lblLecturer
             // 
@@ -219,15 +399,15 @@
             lblLecturer.Text = "Lecturer:";
             lblLecturer.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // textBox4
+            // txtLecturer
             // 
-            textBox4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBox4.Location = new Point(618, 3);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(323, 31);
-            textBox4.TabIndex = 7;
-            textBox4.TextAlign = HorizontalAlignment.Center;
-            textBox4.TextChanged += textBox4_TextChanged;
+            txtLecturer.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtLecturer.Location = new Point(618, 3);
+            txtLecturer.Name = "txtLecturer";
+            txtLecturer.Size = new Size(323, 31);
+            txtLecturer.TabIndex = 7;
+            txtLecturer.TextAlign = HorizontalAlignment.Center;
+            txtLecturer.TextChanged += textBox4_TextChanged;
             // 
             // lblPrice
             // 
@@ -240,13 +420,13 @@
             lblPrice.Text = "Price:";
             lblPrice.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // textBox5
+            // txtPriceCourse
             // 
-            textBox5.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBox5.Location = new Point(618, 45);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(323, 31);
-            textBox5.TabIndex = 9;
+            txtPriceCourse.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtPriceCourse.Location = new Point(618, 45);
+            txtPriceCourse.Name = "txtPriceCourse";
+            txtPriceCourse.Size = new Size(323, 31);
+            txtPriceCourse.TabIndex = 9;
             // 
             // lblCategory
             // 
@@ -270,69 +450,71 @@
             lblDuration.Text = "Duration:";
             lblDuration.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // textBox7
+            // txtDuration
             // 
-            textBox7.Location = new Point(116, 125);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(388, 31);
-            textBox7.TabIndex = 13;
+            txtDuration.Location = new Point(116, 125);
+            txtDuration.Name = "txtDuration";
+            txtDuration.Size = new Size(388, 31);
+            txtDuration.TabIndex = 13;
             // 
-            // label1
+            // lblStartDate
             // 
-            label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label1.AutoSize = true;
-            label1.Location = new Point(512, 122);
-            label1.Name = "label1";
-            label1.Size = new Size(94, 37);
-            label1.TabIndex = 14;
-            label1.Text = "Start Date:";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
+            lblStartDate.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            lblStartDate.AutoSize = true;
+            lblStartDate.Location = new Point(512, 122);
+            lblStartDate.Name = "lblStartDate";
+            lblStartDate.Size = new Size(94, 37);
+            lblStartDate.TabIndex = 14;
+            lblStartDate.Text = "Start Date:";
+            lblStartDate.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // dateTimePicker1
+            // dateTimePickerStartDate
             // 
-            dateTimePicker1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            dateTimePicker1.Location = new Point(618, 125);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(323, 31);
-            dateTimePicker1.TabIndex = 1;
+            dateTimePickerStartDate.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            dateTimePickerStartDate.Location = new Point(618, 125);
+            dateTimePickerStartDate.Name = "dateTimePickerStartDate";
+            dateTimePickerStartDate.Size = new Size(323, 31);
+            dateTimePickerStartDate.TabIndex = 1;
             // 
             // flowLayoutPanel1
             // 
-            flowLayoutPanel1.Controls.Add(radioButton1);
-            flowLayoutPanel1.Controls.Add(radioButton2);
+            flowLayoutPanel1.Controls.Add(radioBtnOnline);
+            flowLayoutPanel1.Controls.Add(radioBtnOffline);
             flowLayoutPanel1.Location = new Point(618, 86);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(317, 33);
             flowLayoutPanel1.TabIndex = 15;
             // 
-            // radioButton1
+            // radioBtnOnline
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(3, 3);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(88, 29);
-            radioButton1.TabIndex = 0;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Online";
-            radioButton1.UseVisualStyleBackColor = true;
+            radioBtnOnline.AutoSize = true;
+            radioBtnOnline.Location = new Point(3, 3);
+            radioBtnOnline.Name = "radioBtnOnline";
+            radioBtnOnline.Size = new Size(88, 29);
+            radioBtnOnline.TabIndex = 0;
+            radioBtnOnline.TabStop = true;
+            radioBtnOnline.Text = "Online";
+            radioBtnOnline.UseVisualStyleBackColor = true;
+            radioBtnOnline.CheckedChanged += radioBtnOnline_CheckedChanged;
             // 
-            // radioButton2
+            // radioBtnOffline
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(97, 3);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(90, 29);
-            radioButton2.TabIndex = 1;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "Offline";
-            radioButton2.UseVisualStyleBackColor = true;
+            radioBtnOffline.AutoSize = true;
+            radioBtnOffline.Location = new Point(97, 3);
+            radioBtnOffline.Name = "radioBtnOffline";
+            radioBtnOffline.Size = new Size(90, 29);
+            radioBtnOffline.TabIndex = 1;
+            radioBtnOffline.TabStop = true;
+            radioBtnOffline.Text = "Offline";
+            radioBtnOffline.UseVisualStyleBackColor = true;
+            radioBtnOffline.CheckedChanged += radioBtnOffline_CheckedChanged;
             // 
-            // textBox1
+            // txtID
             // 
-            textBox1.Location = new Point(116, 3);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(388, 31);
-            textBox1.TabIndex = 1;
+            txtID.Location = new Point(116, 3);
+            txtID.Name = "txtID";
+            txtID.Size = new Size(388, 31);
+            txtID.TabIndex = 1;
             // 
             // groupBox2
             // 
@@ -425,9 +607,14 @@
             Load += CreateUserControl_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            flowLayoutPanel3.ResumeLayout(false);
+            tableLayoutPanelOffline.ResumeLayout(false);
+            tableLayoutPanelOffline.PerformLayout();
+            tableLayoutPanelOnline.ResumeLayout(false);
+            tableLayoutPanelOnline.PerformLayout();
             flowLayoutPanel2.ResumeLayout(false);
-            tableLayoutPanel1.ResumeLayout(false);
-            tableLayoutPanel1.PerformLayout();
+            tableLayoutPanelMain.ResumeLayout(false);
+            tableLayoutPanelMain.PerformLayout();
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel1.PerformLayout();
             groupBox2.ResumeLayout(false);
@@ -439,25 +626,25 @@
 
         private GroupBox groupBox1;
         private GroupBox groupBox2;
-        private TableLayoutPanel tableLayoutPanel1;
+        private TableLayoutPanel tableLayoutPanelMain;
         private Label lblID;
-        private TextBox textBox1;
+        private TextBox txtID;
         private Label lblNameCourse;
-        private TextBox textBox2;
+        private TextBox txtNameCourse;
         private Label lblDescription;
-        private TextBox textBox3;
+        private TextBox txtDescription;
         private Label lblLecturer;
-        private TextBox textBox4;
+        private TextBox txtLecturer;
         private Label lblPrice;
-        private TextBox textBox5;
+        private TextBox txtPriceCourse;
         private Label lblCategory;
         private Label lblDuration;
-        private TextBox textBox7;
-        private DateTimePicker dateTimePicker1;
-        private Label label1;
+        private TextBox txtDuration;
+        private DateTimePicker dateTimePickerStartDate;
+        private Label lblStartDate;
         private FlowLayoutPanel flowLayoutPanel1;
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
+        private RadioButton radioBtnOnline;
+        private RadioButton radioBtnOffline;
         private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn ColumnID;
         private DataGridViewTextBoxColumn ColumnCourseName;
@@ -471,5 +658,20 @@
         private FlowLayoutPanel flowLayoutPanel2;
         private Button btnReset;
         private Label label2;
+        private FlowLayoutPanel flowLayoutPanel3;
+        private TableLayoutPanel tableLayoutPanelOffline;
+        private Label lblLocation;
+        private Label lblClassroom;
+        private Label lblSchedule;
+        private TextBox txtLocation;
+        private TextBox txtClassroom;
+        private TextBox txtSchedule;
+        private TableLayoutPanel tableLayoutPanelOnline;
+        private Label lblPlatform;
+        private Label lblRecording;
+        private Label lblContactInformation;
+        private TextBox txtPLatform;
+        private TextBox txtRecording;
+        private TextBox txtContactInformation;
     }
 }

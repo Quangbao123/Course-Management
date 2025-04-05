@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ownProject\\CourseManagement\\CourseManagement\\CourseManagement.csproj",
+      "projectUniqueName": "D:\\ownProject\\CourseManagement\\Course-Management\\CourseManagement\\CourseManagement.csproj",
       "projectName": "CourseManagement",
-      "projectPath": "D:\\ownProject\\CourseManagement\\CourseManagement\\CourseManagement.csproj",
+      "projectPath": "D:\\ownProject\\CourseManagement\\Course-Management\\CourseManagement\\CourseManagement.csproj",
       "packagesPath": "C:\\Users\\QuangBao\\.nuget\\packages\\",
-      "outputPath": "D:\\ownProject\\CourseManagement\\CourseManagement\\obj\\",
+      "outputPath": "D:\\ownProject\\CourseManagement\\Course-Management\\CourseManagement\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",
