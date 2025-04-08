@@ -24,6 +24,7 @@
         {
             addToolStripCreate.Click += MenuItemCreate_Click;
             deleteToolStripMenuItem.Click += MenuItemDelete_Click;
+            readToolStripMenuItem.Click += MenuItemRead_Click;
         }
         private void MenuItemCreate_Click(object sender, EventArgs e)
         {
@@ -47,8 +48,20 @@
             // Tạo instance của DeleteUserControl
             DeleteUserControl deleteControl = new DeleteUserControl();
 
+            deleteControl.Dock = DockStyle.Fill;
+
             // Thêm nó vào contentPanel
             contentPanel.Controls.Add(deleteControl);
+        }
+        private void MenuItemRead_Click(object sender, EventArgs e)
+        {
+            // Xóa tất cả control hiện tại
+            contentPanel.Controls.Clear();
+
+            // Tạo instance của ReadUserControl
+            ReadUserControl readControl = new ReadUserControl();
+            readControl.Dock = DockStyle.Fill;
+            contentPanel.Controls.Add(readControl);
         }
     }
 }

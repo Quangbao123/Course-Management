@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\ownProject\\CourseManagement\\Course-Management\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F389AF13-0C84-4B79-82C7-DC03F872AE10}|CourseManagement\\CourseManagement.csproj|d:\\ownproject\\coursemanagement\\course-management\\coursemanagement\\managerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F389AF13-0C84-4B79-82C7-DC03F872AE10}|CourseManagement\\CourseManagement.csproj|solutionrelative:coursemanagement\\managerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F389AF13-0C84-4B79-82C7-DC03F872AE10}|CourseManagement\\CourseManagement.csproj|d:\\ownproject\\coursemanagement\\course-management\\coursemanagement\\readcoursefunction\\readusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F389AF13-0C84-4B79-82C7-DC03F872AE10}|CourseManagement\\CourseManagement.csproj|solutionrelative:coursemanagement\\readcoursefunction\\readusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F389AF13-0C84-4B79-82C7-DC03F872AE10}|CourseManagement\\CourseManagement.csproj|d:\\ownproject\\coursemanagement\\course-management\\coursemanagement\\createusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F389AF13-0C84-4B79-82C7-DC03F872AE10}|CourseManagement\\CourseManagement.csproj|solutionrelative:coursemanagement\\createusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F389AF13-0C84-4B79-82C7-DC03F872AE10}|CourseManagement\\CourseManagement.csproj|d:\\ownproject\\coursemanagement\\course-management\\coursemanagement\\createcoursefunction\\createusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F389AF13-0C84-4B79-82C7-DC03F872AE10}|CourseManagement\\CourseManagement.csproj|solutionrelative:coursemanagement\\createcoursefunction\\createusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F389AF13-0C84-4B79-82C7-DC03F872AE10}|CourseManagement\\CourseManagement.csproj|D:\\ownProject\\CourseManagement\\Course-Management\\coursemanagement\\managerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F389AF13-0C84-4B79-82C7-DC03F872AE10}|CourseManagement\\CourseManagement.csproj|solutionrelative:coursemanagement\\managerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F389AF13-0C84-4B79-82C7-DC03F872AE10}|CourseManagement\\CourseManagement.csproj|d:\\ownproject\\coursemanagement\\course-management\\coursemanagement\\readcoursefunction\\readusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F389AF13-0C84-4B79-82C7-DC03F872AE10}|CourseManagement\\CourseManagement.csproj|solutionrelative:coursemanagement\\readcoursefunction\\readusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F389AF13-0C84-4B79-82C7-DC03F872AE10}|CourseManagement\\CourseManagement.csproj|d:\\ownproject\\coursemanagement\\course-management\\coursemanagement\\readcoursefunction\\readusercontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F389AF13-0C84-4B79-82C7-DC03F872AE10}|CourseManagement\\CourseManagement.csproj|solutionrelative:coursemanagement\\readcoursefunction\\readusercontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,39 +31,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ManagerForm.cs",
-              "DocumentMoniker": "D:\\ownProject\\CourseManagement\\Course-Management\\CourseManagement\\ManagerForm.cs",
-              "RelativeDocumentMoniker": "CourseManagement\\ManagerForm.cs",
-              "ToolTip": "D:\\ownProject\\CourseManagement\\Course-Management\\CourseManagement\\ManagerForm.cs",
-              "RelativeToolTip": "CourseManagement\\ManagerForm.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAYwB0AAAA+AAAAAAAAAA==",
+              "Title": "ReadUserControl.cs [Design]",
+              "DocumentMoniker": "D:\\ownProject\\CourseManagement\\Course-Management\\CourseManagement\\ReadCourseFunction\\ReadUserControl.cs",
+              "RelativeDocumentMoniker": "CourseManagement\\ReadCourseFunction\\ReadUserControl.cs",
+              "ToolTip": "D:\\ownProject\\CourseManagement\\Course-Management\\CourseManagement\\ReadCourseFunction\\ReadUserControl.cs [Design]",
+              "RelativeToolTip": "CourseManagement\\ReadCourseFunction\\ReadUserControl.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T14:55:09.709Z",
+              "WhenOpened": "2025-04-08T05:35:57.235Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReadUserControl.Designer.cs",
+              "DocumentMoniker": "D:\\ownProject\\CourseManagement\\Course-Management\\CourseManagement\\ReadCourseFunction\\ReadUserControl.Designer.cs",
+              "RelativeDocumentMoniker": "CourseManagement\\ReadCourseFunction\\ReadUserControl.Designer.cs",
+              "ToolTip": "D:\\ownProject\\CourseManagement\\Course-Management\\CourseManagement\\ReadCourseFunction\\ReadUserControl.Designer.cs",
+              "RelativeToolTip": "CourseManagement\\ReadCourseFunction\\ReadUserControl.Designer.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAEwIoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T05:33:58.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReadUserControl.cs",
+              "DocumentMoniker": "D:\\ownProject\\CourseManagement\\Course-Management\\CourseManagement\\ReadCourseFunction\\ReadUserControl.cs",
+              "RelativeDocumentMoniker": "CourseManagement\\ReadCourseFunction\\ReadUserControl.cs",
+              "ToolTip": "D:\\ownProject\\CourseManagement\\Course-Management\\CourseManagement\\ReadCourseFunction\\ReadUserControl.cs",
+              "RelativeToolTip": "CourseManagement\\ReadCourseFunction\\ReadUserControl.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T05:28:07.123Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CreateUserControl.cs [Design]",
-              "DocumentMoniker": "D:\\ownProject\\CourseManagement\\Course-Management\\CourseManagement\\CreateUserControl.cs",
-              "RelativeDocumentMoniker": "CourseManagement\\CreateUserControl.cs",
-              "ToolTip": "D:\\ownProject\\CourseManagement\\Course-Management\\CourseManagement\\CreateUserControl.cs [Design]",
-              "RelativeToolTip": "CourseManagement\\CreateUserControl.cs [Design]",
+              "Title": "CreateUserControl.cs",
+              "DocumentMoniker": "D:\\ownProject\\CourseManagement\\Course-Management\\CourseManagement\\CreateCourseFunction\\CreateUserControl.cs",
+              "RelativeDocumentMoniker": "CourseManagement\\CreateCourseFunction\\CreateUserControl.cs",
+              "ToolTip": "D:\\ownProject\\CourseManagement\\Course-Management\\CourseManagement\\CreateCourseFunction\\CreateUserControl.cs",
+              "RelativeToolTip": "CourseManagement\\CreateCourseFunction\\CreateUserControl.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T14:22:44.779Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ManagerForm.cs [Design]",
-              "DocumentMoniker": "D:\\ownProject\\CourseManagement\\Course-Management\\CourseManagement\\ManagerForm.cs",
-              "RelativeDocumentMoniker": "CourseManagement\\ManagerForm.cs",
-              "ToolTip": "D:\\ownProject\\CourseManagement\\Course-Management\\CourseManagement\\ManagerForm.cs [Design]",
-              "RelativeToolTip": "CourseManagement\\ManagerForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T14:22:14.901Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-08T05:27:18.446Z",
+              "EditorCaption": ""
             }
           ]
         }
