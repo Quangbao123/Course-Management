@@ -64,7 +64,7 @@ namespace CourseManagement
             addToolStripCreate.Name = "addToolStripCreate";
             addToolStripCreate.Size = new Size(270, 34);
             addToolStripCreate.Text = "Create";
-            addToolStripCreate.Click += this.addToolStripCreate_Click;
+            addToolStripCreate.Click += addToolStripCreate_Click;
             // 
             // deleteToolStripMenuItem
             // 
@@ -77,6 +77,7 @@ namespace CourseManagement
             reviseToolStripMenuItem.Name = "reviseToolStripMenuItem";
             reviseToolStripMenuItem.Size = new Size(270, 34);
             reviseToolStripMenuItem.Text = "Update";
+            reviseToolStripMenuItem.Click += reviseToolStripMenuItem_Click;
             // 
             // readToolStripMenuItem
             // 

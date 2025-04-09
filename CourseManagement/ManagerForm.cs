@@ -1,4 +1,6 @@
-﻿namespace CourseManagement
+﻿using CourseManagement.UpdateCourseFunction;
+
+namespace CourseManagement
 {
     public partial class ManagerForm : Form
     {
@@ -24,6 +26,7 @@
         {
             addToolStripCreate.Click += MenuItemCreate_Click;
             deleteToolStripMenuItem.Click += MenuItemDelete_Click;
+            updateToolStripMenuItem.Click += reviseToolStripMenuItem_Click;
             readToolStripMenuItem.Click += MenuItemRead_Click;
         }
         private void MenuItemCreate_Click(object sender, EventArgs e)
@@ -62,6 +65,15 @@
             ReadUserControl readControl = new ReadUserControl();
             readControl.Dock = DockStyle.Fill;
             contentPanel.Controls.Add(readControl);
+        }
+
+        private void reviseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            contentPanel.Controls.Clear();
+
+            UpdateUserControl updateControl = new UpdateUserControl();
+            updateControl.Dock = DockStyle.Fill;
+            contentPanel.Controls.Add(updateControl);
         }
     }
 }

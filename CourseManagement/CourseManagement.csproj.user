@@ -13,5 +13,8 @@
     <Compile Update="ReadCourseFunction\ReadUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="UpdateCourseFunction\UpdateUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
