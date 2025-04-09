@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace CourseManagement
 {
-    public partial class DeleteUserControl: UserControl
+    public partial class DeleteUserControl : UserControl
     {
         public DeleteUserControl()
         {
             InitializeComponent();
+        }
+
+        private void DeleteUserControl_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

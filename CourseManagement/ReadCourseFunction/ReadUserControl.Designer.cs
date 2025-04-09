@@ -38,6 +38,7 @@
             groupBox1 = new GroupBox();
             groupBox2 = new GroupBox();
             dataGridView1 = new DataGridView();
+            comboBoxRead = new ComboBox();
             flowLayoutPanel1.SuspendLayout();
             flowLayoutPanel2.SuspendLayout();
             groupBox1.SuspendLayout();
@@ -82,6 +83,7 @@
             flowLayoutPanel2.Controls.Add(textBox1);
             flowLayoutPanel2.Controls.Add(btnSearch);
             flowLayoutPanel2.Controls.Add(flowLayoutPanel1);
+            flowLayoutPanel2.Controls.Add(comboBoxRead);
             flowLayoutPanel2.Location = new Point(47, 92);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
             flowLayoutPanel2.Size = new Size(1375, 47);
@@ -148,6 +150,14 @@
             dataGridView1.Size = new Size(1379, 411);
             dataGridView1.TabIndex = 0;
             // 
+            // comboBoxRead
+            // 
+            comboBoxRead.FormattingEnabled = true;
+            comboBoxRead.Location = new Point(941, 3);
+            comboBoxRead.Name = "comboBoxRead";
+            comboBoxRead.Size = new Size(182, 33);
+            comboBoxRead.TabIndex = 2;
+            // 
             // ReadUserControl
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -179,5 +189,6 @@
         private GroupBox groupBox1;
         private GroupBox groupBox2;
         private DataGridView dataGridView1;
+        private ComboBox comboBoxRead;
     }
 }

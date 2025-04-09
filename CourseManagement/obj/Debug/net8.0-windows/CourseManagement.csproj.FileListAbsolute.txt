@@ -36,4 +36,3 @@ D:\ownProject\CourseManagement\Course-Management\CourseManagement\obj\Debug\net8
 D:\ownProject\CourseManagement\Course-Management\CourseManagement\obj\Debug\net8.0-windows\CourseManagement.genruntimeconfig.cache
 D:\ownProject\CourseManagement\Course-Management\CourseManagement\obj\Debug\net8.0-windows\ref\CourseManagement.dll
 D:\ownProject\CourseManagement\Course-Management\CourseManagement\obj\Debug\net8.0-windows\CourseManagement.ReadUserControl.resources
-D:\ownProject\CourseManagement\Course-Management\CourseManagement\obj\Debug\net8.0-windows\CourseManagement.ReadCourseFunction.OnlineCourseList.resources
