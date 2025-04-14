@@ -34,18 +34,15 @@ namespace CourseManagement
             courseToolStripMenuItem = new ToolStripMenuItem();
             addToolStripCreate = new ToolStripMenuItem();
             deleteToolStripMenuItem = new ToolStripMenuItem();
-            reviseToolStripMenuItem = new ToolStripMenuItem();
-            readToolStripMenuItem = new ToolStripMenuItem();
-            priceToolStripMenuItem = new ToolStripMenuItem();
             updateToolStripMenuItem = new ToolStripMenuItem();
-            readToolStripMenuItem1 = new ToolStripMenuItem();
+            readToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(24, 24);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { courseToolStripMenuItem, priceToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { courseToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1254, 33);
@@ -54,7 +51,7 @@ namespace CourseManagement
             // 
             // courseToolStripMenuItem
             // 
-            courseToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { addToolStripCreate, deleteToolStripMenuItem, reviseToolStripMenuItem, readToolStripMenuItem });
+            courseToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { addToolStripCreate, deleteToolStripMenuItem, updateToolStripMenuItem, readToolStripMenuItem });
             courseToolStripMenuItem.Name = "courseToolStripMenuItem";
             courseToolStripMenuItem.Size = new Size(83, 29);
             courseToolStripMenuItem.Text = "Course";
@@ -62,52 +59,35 @@ namespace CourseManagement
             // addToolStripCreate
             // 
             addToolStripCreate.Name = "addToolStripCreate";
-            addToolStripCreate.Size = new Size(270, 34);
+            addToolStripCreate.Size = new Size(172, 34);
             addToolStripCreate.Text = "Create";
             addToolStripCreate.Click += addToolStripCreate_Click;
             // 
             // deleteToolStripMenuItem
             // 
             deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            deleteToolStripMenuItem.Size = new Size(270, 34);
+            deleteToolStripMenuItem.Size = new Size(172, 34);
             deleteToolStripMenuItem.Text = "Delete";
-            // 
-            // reviseToolStripMenuItem
-            // 
-            reviseToolStripMenuItem.Name = "reviseToolStripMenuItem";
-            reviseToolStripMenuItem.Size = new Size(270, 34);
-            reviseToolStripMenuItem.Text = "Update";
-            reviseToolStripMenuItem.Click += reviseToolStripMenuItem_Click;
-            // 
-            // readToolStripMenuItem
-            // 
-            readToolStripMenuItem.Name = "readToolStripMenuItem";
-            readToolStripMenuItem.Size = new Size(270, 34);
-            readToolStripMenuItem.Text = "Read";
-            // 
-            // priceToolStripMenuItem
-            // 
-            priceToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { updateToolStripMenuItem, readToolStripMenuItem1 });
-            priceToolStripMenuItem.Name = "priceToolStripMenuItem";
-            priceToolStripMenuItem.Size = new Size(65, 29);
-            priceToolStripMenuItem.Text = "Price";
             // 
             // updateToolStripMenuItem
             // 
             updateToolStripMenuItem.Name = "updateToolStripMenuItem";
             updateToolStripMenuItem.Size = new Size(172, 34);
             updateToolStripMenuItem.Text = "Update";
+            updateToolStripMenuItem.Click += reviseToolStripMenuItem_Click;
             // 
-            // readToolStripMenuItem1
+            // readToolStripMenuItem
             // 
-            readToolStripMenuItem1.Name = "readToolStripMenuItem1";
-            readToolStripMenuItem1.Size = new Size(172, 34);
-            readToolStripMenuItem1.Text = "Read";
+            readToolStripMenuItem.Name = "readToolStripMenuItem";
+            readToolStripMenuItem.Size = new Size(172, 34);
+            readToolStripMenuItem.Text = "Read";
             // 
             // ManagerForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(1254, 629);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
@@ -137,13 +117,10 @@ namespace CourseManagement
         #endregion
 
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem priceToolStripMenuItem;
-        private ToolStripMenuItem updateToolStripMenuItem;
-        private ToolStripMenuItem readToolStripMenuItem1;
         private ToolStripMenuItem courseToolStripMenuItem;
         private ToolStripMenuItem addToolStripCreate;
         private ToolStripMenuItem deleteToolStripMenuItem;
-        private ToolStripMenuItem reviseToolStripMenuItem;
-        private ToolStripMenuItem readToolStripMenuItem; 
+        private ToolStripMenuItem updateToolStripMenuItem;
+        private ToolStripMenuItem readToolStripMenuItem;
     }
 }

@@ -75,5 +75,10 @@ namespace CourseManagement
             updateControl.Dock = DockStyle.Fill;
             contentPanel.Controls.Add(updateControl);
         }
+
+        private void updateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
