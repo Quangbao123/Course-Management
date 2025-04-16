@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="CreateCourseFunction\CreateUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="DeleteCourseFunction\DeleteUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Update="ManagerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ReadCourseFunction\ReadUserControl.cs">
+    <Compile Update="UI\CreateCourseFunction\CreateUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UpdateCourseFunction\UpdateUserControl.cs">
+    <Compile Update="UI\DeleteCourseFunction\DeleteUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\ReadCourseFunction\ReadUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\UpdateCourseFunction\UpdateUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
