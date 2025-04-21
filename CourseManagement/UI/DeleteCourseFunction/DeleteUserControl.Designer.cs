@@ -37,7 +37,6 @@
             flowLayoutPanel2 = new FlowLayoutPanel();
             radioBtnOnline = new RadioButton();
             radioBtnOffline = new RadioButton();
-            comboBoxDelete = new ComboBox();
             label1 = new Label();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewDelete).BeginInit();
@@ -86,7 +85,6 @@
             flowLayoutPanel1.Controls.Add(textBox1);
             flowLayoutPanel1.Controls.Add(btnSearchDelete);
             flowLayoutPanel1.Controls.Add(flowLayoutPanel2);
-            flowLayoutPanel1.Controls.Add(comboBoxDelete);
             flowLayoutPanel1.Location = new Point(40, 95);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(1132, 43);
@@ -139,14 +137,6 @@
             radioBtnOffline.Text = "Offline";
             radioBtnOffline.UseVisualStyleBackColor = true;
             // 
-            // comboBoxDelete
-            // 
-            comboBoxDelete.FormattingEnabled = true;
-            comboBoxDelete.Location = new Point(916, 3);
-            comboBoxDelete.Name = "comboBoxDelete";
-            comboBoxDelete.Size = new Size(182, 33);
-            comboBoxDelete.TabIndex = 3;
-            // 
             // label1
             // 
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
@@ -190,6 +180,5 @@
         private RadioButton radioBtnOnline;
         private RadioButton radioBtnOffline;
         private DataGridView dataGridViewDelete;
-        private ComboBox comboBoxDelete;
     }
 }

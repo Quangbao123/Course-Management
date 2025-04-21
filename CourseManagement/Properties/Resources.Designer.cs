@@ -59,15 +59,5 @@ namespace CourseManagement.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap hinh_nen_may_tinh_dep_37 {
-            get {
-                object obj = ResourceManager.GetObject("hinh-nen-may-tinh-dep-37", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
