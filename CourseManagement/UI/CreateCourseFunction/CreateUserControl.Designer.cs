@@ -77,6 +77,7 @@
             ColumnDuration = new DataGridViewTextBoxColumn();
             ColumnPrice = new DataGridViewTextBoxColumn();
             ColumnStartDate = new DataGridViewTextBoxColumn();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             groupBox1.SuspendLayout();
             flowLayoutPanel3.SuspendLayout();
             tableLayoutPanelOffline.SuspendLayout();
@@ -673,5 +674,6 @@
         private TextBox txtPLatform;
         private TextBox txtRecording;
         private TextBox txtContactInformation;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

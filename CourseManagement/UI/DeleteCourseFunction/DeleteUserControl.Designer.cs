@@ -38,6 +38,7 @@
             radioBtnOnline = new RadioButton();
             radioBtnOffline = new RadioButton();
             label1 = new Label();
+            BtnDelete = new Button();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewDelete).BeginInit();
             groupBox1.SuspendLayout();
@@ -84,6 +85,7 @@
             flowLayoutPanel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             flowLayoutPanel1.Controls.Add(textBox1);
             flowLayoutPanel1.Controls.Add(btnSearchDelete);
+            flowLayoutPanel1.Controls.Add(BtnDelete);
             flowLayoutPanel1.Controls.Add(flowLayoutPanel2);
             flowLayoutPanel1.Location = new Point(40, 95);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -110,7 +112,7 @@
             // 
             flowLayoutPanel2.Controls.Add(radioBtnOnline);
             flowLayoutPanel2.Controls.Add(radioBtnOffline);
-            flowLayoutPanel2.Location = new Point(717, 3);
+            flowLayoutPanel2.Location = new Point(835, 3);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
             flowLayoutPanel2.Size = new Size(193, 39);
             flowLayoutPanel2.TabIndex = 2;
@@ -148,6 +150,16 @@
             label1.TabIndex = 2;
             label1.Text = "DELETE COURSE";
             // 
+            // BtnDelete
+            // 
+            BtnDelete.Location = new Point(717, 3);
+            BtnDelete.Name = "BtnDelete";
+            BtnDelete.Size = new Size(112, 34);
+            BtnDelete.TabIndex = 4;
+            BtnDelete.Text = "Delete";
+            BtnDelete.UseVisualStyleBackColor = true;
+            BtnDelete.Click += button1_Click;
+            // 
             // DeleteUserControl
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -180,5 +192,6 @@
         private RadioButton radioBtnOnline;
         private RadioButton radioBtnOffline;
         private DataGridView dataGridViewDelete;
+        private Button BtnDelete;
     }
 }
